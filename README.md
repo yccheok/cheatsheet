@@ -8,6 +8,11 @@ Use tools from Docker to process data in host machine
     docker run --rm -v $(pwd):/app -w /app composer/composer create-project --prefer-dist laravel/laravel html (Linux)
     docker run --rm -v %cd%:/app -w /app composer/composer create-project --prefer-dist laravel/laravel html (Windows)
     
+Remove all images from PowerShell
+
+    docker ps -a -q | % { docker rm $_ }
+    docker images -q | % { docker rmi $_ }
+
 # Postgres
 
 Login to localhost as user "postgres"
