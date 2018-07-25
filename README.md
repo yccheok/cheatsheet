@@ -10,6 +10,7 @@ Use tools from Docker to process data in host machine
     
 Remove all images from PowerShell
 
+    docker stop $(docker ps -a -q)
     docker ps -a -q | % { docker rm $_ }
     docker images -q | % { docker rmi $_ }
 
