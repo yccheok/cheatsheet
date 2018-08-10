@@ -1,5 +1,10 @@
 # Docker
 
+Enable/disable Hyper-V
+
+    bcdedit /set hypervisorlaunchtype off (Disable to run Android emulator)
+    bcdedit /set hypervisorlaunchtype auto (Enable to run Docker)
+    
 Use tools from Docker to process data in host machine
 
     docker run --rm -v $(pwd):/app -w /app php:cli php hello.php (Linux)
