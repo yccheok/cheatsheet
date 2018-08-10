@@ -5,6 +5,10 @@ Download Django to local
     docker-compose run web django-admin.py startproject composeexample .
     (https://docs.docker.com/compose/django/#create-a-django-project)
     
+Run Django manage script
+    
+    docker-compose run web /code/manage.py createsuperuser
+    
 Enable/disable Hyper-V
 
     bcdedit /set hypervisorlaunchtype off (Disable to run Android emulator)
