@@ -32,6 +32,7 @@ Remove all images from PowerShell
 # Postgres
 
 Went into db container
+    
     docker-compose exec db bash
    
 Login to localhost as user "postgres"
