@@ -43,6 +43,12 @@ List all databases
 
     postgres-# \l
     
+Use a database
+
+    postgres-# \c postgres 
+    
 List all tables
 
     postgres-# \dt   
+
+
