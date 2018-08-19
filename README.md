@@ -7,7 +7,7 @@ Download Django to local
     
 Run Django manage script
     
-    docker-compose run --rm -v %cd%:/app -w /app django manage.py createsuperuser
+    C:\yocto\snapweb>docker-compose run --rm -v %cd%/django:/app -w /app django /app/manage.py changepassword root
     C:\yocto\snapweb>docker-compose run --rm -v %cd%/django:/app -w /app django /app/manage.py startapp accounts
     
 Enable/disable Hyper-V
