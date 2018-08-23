@@ -2,7 +2,7 @@
 
 Download Django to local
     
-    docker-compose run web django-admin.py startproject composeexample .
+    C:\yocto\snapweb>docker-compose run --rm -v %cd%/django:/app -w /app django django-admin.py startproject web .
     (https://docs.docker.com/compose/django/#create-a-django-project)
     
 Run Django manage script
