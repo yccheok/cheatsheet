@@ -10,6 +10,10 @@ Run Django manage script
     C:\yocto\snapweb>docker-compose run --rm -v %cd%/django:/app -w /app django /app/manage.py changepassword root
     C:\yocto\snapweb>docker-compose run --rm -v %cd%/django:/app -w /app django /app/manage.py startapp accounts
     
+Generate empty migration file
+
+    C:\yocto\jstock-insider>docker-compose run --rm -v %cd%/django:/app -w /app django /app/manage.py makemigrations users --empty -n alter_ts_default_to_now
+    
 Enable/disable Hyper-V
 
     bcdedit /set hypervisorlaunchtype off (Disable to run Android emulator)
