@@ -9,6 +9,7 @@ Run Django manage script
     
     C:\yocto\snapweb>docker-compose run --rm -v %cd%/django:/app -w /app django python /app/manage.py changepassword root
     C:\yocto\snapweb>docker-compose run --rm -v %cd%/django:/app -w /app django python /app/manage.py startapp accounts
+    C:\yocto\snapweb>docker-compose run --rm -v %cd%/django:/app -w /app django python /app/manage.py makemigrations
     
 Generate empty migration file
 
