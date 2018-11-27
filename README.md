@@ -35,6 +35,11 @@ Remove all images from PowerShell
     docker images -q | % { docker rmi $_ }
     docker volume prune
 
+Clean build on images in case something went wrong
+
+    docker-compose up -d --force-recreate --build
+    
+    
 # Postgres
 
 Went into db container
