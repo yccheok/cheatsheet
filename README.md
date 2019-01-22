@@ -1,5 +1,8 @@
 # Docker
 
+Git
+    git fetch --all; git reset --hard origin/master
+    
 Download Django to local
     
     C:\yocto\snapweb>docker-compose run --rm -v %cd%/django:/app -w /app django django-admin.py startproject web .
