@@ -1,10 +1,5 @@
 # Docker
 
-
-Clean Git checkout from master and overwrite everything
-
-    git fetch --all; git reset --hard origin/master
-       
 Download Django to local
     
     C:\yocto\snapweb>docker-compose run --rm -v %cd%/django:/app -w /app django django-admin.py startproject web .
@@ -40,6 +35,14 @@ Remove all images from PowerShell
     docker images -q | % { docker rmi $_ }
     docker volume prune
 
+Clean Git checkout from master and overwrite everything
+
+    git fetch --all; git reset --hard origin/master
+       
+Clean up docker log
+
+    truncate -s 0 /var/lib/docker/containers/*/*-json.log
+    
 Clean build on images in case something went wrong
 
     docker-compose up -d --force-recreate --build
