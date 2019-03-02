@@ -52,7 +52,7 @@ Clean build on images in case something went wrong
 
 Went into db container
     
-    docker-compose exec db bash
+    docker-compose exec postgres sh
    
 Login to localhost as user "postgres"
 
