@@ -64,7 +64,7 @@ List all databases
     
 Use a database
 
-    postgres-# \c postgres 
+    postgres-# \c jstock_iex 
     
 List all tables
 
