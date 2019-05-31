@@ -76,3 +76,10 @@ Add debug key to Facebook
 
     c:\yocto>keytool -exportcert -alias androiddebugkey -keystore c:\Users\yccheok\.android\debug.keystore | c:\openssl-0.9.8k_X64\bin\openssl.exe sha1 -binary | c:\openssl-0.9.8k_X64\bin\openssl.exe base64
     Enter keystore password:  android
+    
+# Google
+
+Add debug key to Google
+
+    c:\yocto>keytool -exportcert -list -v -keystore c:\Users\yccheok\.android\debug.keystore
+    Enter keystore password:  android
