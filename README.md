@@ -70,6 +70,11 @@ List all tables
 
     postgres-# \dt   
 
+Check whether news notifications are being sent today
+
+    select ts from notification where (request->'data'->'news_alerts') is not null order by ts desc limit 100;
+    
+    
 # Facebook
 
 Add debug key to Facebook
