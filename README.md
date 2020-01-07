@@ -47,7 +47,10 @@ Clean build on images in case something went wrong
 
     docker-compose up -d --force-recreate --build
     
-    
+Clear redis cache
+
+    docker exec -it jstockiex_redis_1 redis-cli FLUSHALL
+
 # Postgres
 
 Went into db container
