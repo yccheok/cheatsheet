@@ -77,6 +77,20 @@ Check whether news notifications are being sent today
 
     select ts from notification where (request->'data'->'news_alerts') is not null order by ts desc limit 100;
     
+Check table size usage
+
+    select table_name, pg_relation_size(quote_ident(table_name))
+    from information_schema.tables
+    where table_schema = 'public'
+    order by 2
+    
+Delete a row
+    
+    delete from notification where ts < timestamp '2020-08-20 00:00:00';
+    
+Claim back disk space
+
+    vacuum full;
     
 # Facebook
 
