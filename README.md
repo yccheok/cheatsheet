@@ -105,3 +105,10 @@ Add debug key to Google
 
     c:\yocto>keytool -exportcert -list -v -keystore c:\Users\yccheok\.android\debug.keystore
     Enter keystore password:  android
+    
+# Google Play store screenshots
+    Create an image 1242 x 2208
+    Scale down screenshot size to 90% till 972 x 1728
+    Place screenshot @ position x=135, y=345
+    Use font Tahoma 84 Fixed (96 DPI)
+    
