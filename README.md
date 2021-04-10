@@ -42,8 +42,12 @@ Clean Git checkout from master and overwrite everything
 Clean up docker log
 
     truncate -s 0 /var/lib/docker/containers/*/*-json.log
+
+Clean build on ONE images in case something went wrong
+
+    docker-compose up -d --force-recreate --no-deps --build flask
     
-Clean build on images in case something went wrong
+Clean build on ALL images in case something went wrong
 
     docker-compose up -d --force-recreate --build
     
