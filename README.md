@@ -57,7 +57,7 @@ Clear redis cache
 
 Remove postgres volume
 
-    docker-compose down --volumes
+    docker-compose down --volumes (DANGEROUS!!!)
     docker-compose up -d --force-recreate --build
     
     
