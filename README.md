@@ -58,7 +58,7 @@ Clear redis cache
 Remove postgres volume
 
     docker-compose down --volumes
-    docker-compose up -d
+    docker-compose up -d --force-recreate --build
     
     
 Let Flask access local drive
