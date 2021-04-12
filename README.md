@@ -55,6 +55,35 @@ Clear redis cache
 
     docker exec -it jstockiex_redis_1 redis-cli FLUSHALL
 
+Remove postgres volume
+
+    docker-compose down --volumes
+    docker-compose up -d
+    
+    
+Let Flask access local drive
+
+    flask:
+        build:
+            context: ./flask
+            dockerfile: Dockerfile
+        restart: always
+        depends_on:
+            - pgbouncer
+        expose:
+            - "5000"
+
+        #
+        # FOR DEVELOPMENT
+        #
+        volumes:
+            - C:/xxx/flask:/app
+        logging:
+            driver: "json-file"
+            options:
+            max-file: "10"
+            max-size: "10m"
+            
 # Postgres
 
 Went into db container
