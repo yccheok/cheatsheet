@@ -124,7 +124,13 @@ Delete a row
 Claim back disk space
 
     vacuum full;
+
+# RabbitMQ
     
+Check queues
+
+    rabbitmqadmin -u <username> -p <password> list queues vhost name node messages message_stats.publish_details.rate
+
 # Facebook
 
 Add debug key to Facebook
