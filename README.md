@@ -1,3 +1,8 @@
+#Python
+
+    python -m venv .
+    Scripts\activate.bat
+    
 # Docker
 
 Download Django to local
