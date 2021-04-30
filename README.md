@@ -1,4 +1,12 @@
+# Android Studio
+
+Clear app data
+
+    adb shell pm clear com.yocto.wenote
+    
 # Python
+
+Run Python in virtual environment
 
     python -m venv .
     Scripts\activate.bat
