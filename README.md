@@ -144,6 +144,10 @@ Claim back disk space
 
     vacuum full;
 
+Restore from pgdump
+
+    psql -h localhost -U postgres wenote_cloud_storage < pg_dump-20210520_125646.sql
+    
 # RabbitMQ
     
 Check queues
