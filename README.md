@@ -146,7 +146,11 @@ Claim back disk space
 
 Restore from pgdump
 
-    psql -h localhost -U postgres wenote_cloud_storage < pg_dump-20210520_125646.sql
+    (PGPASSWORD="$DB_PASSWORD" pg_dump -c -h "$DB_HOST" "$DB_DB" -p "$DB_PORT" -U "$DB_USER" > $FILE)
+    psql -h localhost -U postgres wenote_cloud_storage < /tmp/pg_dump-20210520_125646.sql
+    
+    (PGPASSWORD="$DB_PASSWORD" pg_dump -c -C -h "$DB_HOST" "$DB_DB" -p "$DB_PORT" -U "$DB_USER" > $FILE)
+    psql -h localhost -U postgres < /tmp/pg_dump-20210520_131418.sql
     
 # RabbitMQ
     
