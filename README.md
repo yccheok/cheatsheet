@@ -77,6 +77,12 @@ Remove postgres volume
 Let Flask access local drive
 
     flask:
+        #
+        # FOR DEVELOPMENT (Not using internal network for volume mapping to work)
+        #
+        #networks:
+        #    - internal
+        #
         build:
             context: ./flask
             dockerfile: Dockerfile
