@@ -15,6 +15,7 @@ Setup a clean and strict firewall rule in new machine
     /sbin/iptables-save
     
 Edit firewall rule
+
     iptables -L --line-number
     iptables -D INPUT 3
     /sbin/iptables-save
