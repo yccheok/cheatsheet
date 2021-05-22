@@ -1,3 +1,18 @@
+# Firewall
+
+Setup a clean and strict firewall rule in new machine
+
+    iptables -t nat -F
+    iptables -t mangle -F
+    iptables -F
+    iptables -X
+    iptables -L
+    iptables -A INPUT -p tcp --dport 22 -j ACCEPT
+    iptables -A INPUT -p tcp --dport 443 -j ACCEPT
+    iptables -P INPUT DROP
+    iptables -A INPUT -j DROP
+    /sbin/iptables-save
+    
 # Android Studio
 
 Clear app data
