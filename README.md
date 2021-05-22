@@ -9,8 +9,14 @@ Setup a clean and strict firewall rule in new machine
     iptables -L
     iptables -A INPUT -p tcp --dport 22 -j ACCEPT
     iptables -A INPUT -p tcp --dport 443 -j ACCEPT
-    iptables -P INPUT DROP
+    iptables -A INPUT -i lo -j ACCEPT
+    iptables -A INPUT -m state --state ESTABLISHED -j ACCEPT
     iptables -A INPUT -j DROP
+    /sbin/iptables-save
+    
+Edit firewall rule
+    iptables -L --line-number
+    iptables -D INPUT 3
     /sbin/iptables-save
     
 # Android Studio
