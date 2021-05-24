@@ -5,14 +5,17 @@ Differnt provider profiles
     C:\Users\yccheok\.aws\credentials
 
 List all files
+
     aws s3api list-object-versions --bucket wenote-b
     aws s3api list-object-versions --bucket wenote-b --profile space --endpoint-url https://fra1.digitaloceanspaces.com
     aws s3api list-object-versions --bucket wenote-b --profile wasabi --endpoint-url https://s3.eu-central-1.wasabisys.com
     
 Inspect individual file
+
     aws s3api head-object --bucket wenote-b --key user-2/attachment/f995bdb4-691b-4c44-8a1f-dd348665da82.jpg
     aws s3api head-object --bucket wenote-b --key user-2/attachment/f995bdb4-691b-4c44-8a1f-dd348665da82.jpg --profile space --endpoint-url https://fra1.digitaloceanspaces.com
     aws s3api head-object --bucket wenote-b --key user-2/attachment/f995bdb4-691b-4c44-8a1f-dd348665da82.jpg --profile wasabi --endpoint-url https://s3.eu-central-1.wasabisys.com
+    
 
 # Android Studio
 
