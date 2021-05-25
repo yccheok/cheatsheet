@@ -1,3 +1,10 @@
+# Python
+    
+    C:\yocto\sandbox>python -m virtualenv venv
+    C:\yocto\sandbox>venv\Scripts\activate.bat
+    (venv) C:\yocto\sandbox>pip install requests
+    (venv) C:\yocto\sandbox>python A.py
+    
 # Cloud Storage
 
 Differnt provider profiles
