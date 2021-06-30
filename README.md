@@ -204,3 +204,7 @@ Add debug key to Google
     Place screenshot @ position x=135, y=345
     Use font Tahoma 84 Fixed (96 DPI)
     
+# Google App Engine
+
+    gcloud app deploy --project jstock-webapp app.yaml
+    
