@@ -1,3 +1,9 @@
+# iCloud Document
+
+Monitor sync activities
+
+    brctl log -w --shorten | grep CloudDocs
+    
 # Python
     
     C:\yocto\sandbox>python -m virtualenv venv
