@@ -1,3 +1,9 @@
+# Emergency Action Plan when Digital Ocean Disk is Full
+
+    Go to jstock_notification folder
+    Clean up the /tmp folder in postgres_backup docker
+    Truncate notification and notification_data table in postgres docker
+
 # iCloud Document
 
 Monitor sync activities
