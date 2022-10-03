@@ -3,8 +3,11 @@
 1. Upload app into phone via Android Studio.
 2. Write some text, attach some images, attach some voices.
 3. Execute the following code in Android Studio's terminal
+
        adb shell bmgr backupnow com.yocto.wenote
+       
    You should able to observe backup progress log
+   
 4. Uninstall the app from device.
 5. Upload app into phone via Android Studio. We should observe the old data is still there.
        
