@@ -2,6 +2,8 @@
 
     select * from notification where request->>'to' in (select token from google where email = 'xxx@gmail.com') order by ts desc;
 
+    select email from google where token in (select request->'message'->>'token' from notification where id >= 3030128 AND id <= 3030157);
+    
 # How to test on Android Auto Backup feature
 
 1. Upload app into phone via Android Studio.
