@@ -1,7 +1,10 @@
 # Debug multi sync feature
 
-    select * from notification where request->>'to' in (select token from google where email = 'xxx@gmail.com') order by ts desc;
+    // This is old format
+    //select * from notification where request->>'to' in (select token from google where email = 'yancheng.cheok@gmail.com') order by ts desc;
 
+    select * from notification where request->'message'->>'token' in (select token from google where email = 'yancheng.cheok@gmail.com') order by ts desc;
+    
     select email from google where token in (select request->'message'->>'token' from notification where id >= 3030128 AND id <= 3030157);
     
 # How to test on Android Auto Backup feature
