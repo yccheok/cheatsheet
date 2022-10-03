@@ -1,3 +1,7 @@
+# Debug multi sync feature
+
+    select * from notification where request->>'to' in (select token from google where email = 'xxx@gmail.com') order by ts desc;
+
 # How to test on Android Auto Backup feature
 
 1. Upload app into phone via Android Studio.
