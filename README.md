@@ -1,3 +1,12 @@
+# Print dependency tree
+
+In Android Studio's terminal, type the following command
+
+    ./gradlew app:dependencies
+    ./gradlew jstockandroid:dependencies
+    
+Whether using "app" or "jstockandroid", is depending on the folder name found in the project.
+
 # Debug multi sync feature
 
     // This is old format
