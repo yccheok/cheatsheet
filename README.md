@@ -1,3 +1,7 @@
+# Link to rate iOS WeNote app
+
+    https://apps.apple.com/app/id1562256136?action=write-review
+
 # Using data from production iCloud
 
 https://stackoverflow.com/a/40414108/72437
