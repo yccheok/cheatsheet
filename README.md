@@ -1,3 +1,6 @@
+# Find error in iOS string resource file
+    plutil -lint Localizable.strings
+
 # Link to rate iOS WeNote app
 
     https://apps.apple.com/app/id1562256136?action=write-review
