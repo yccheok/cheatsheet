@@ -1,3 +1,12 @@
+# Generate 1284 x 2778 screenshot for App Store
+
+1. Use iPhone 11 Pro Max simulator to generate 1242 x 2688 raw screenshot.
+2. Use https://screenshots.pro/
+
+![](https://i.imgur.com/xNRHXpO.png)
+
+![](https://i.imgur.com/dS1l8Qu.png)
+
 # Find error in iOS string resource file
     plutil -lint Localizable.strings
 
