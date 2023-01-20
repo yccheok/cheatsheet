@@ -1,3 +1,8 @@
+# Generate 1242 x 2208 screenshot for App Store
+
+1. Use iPhone 8 Plus simulator to generate 1242 x 2208 raw screenshot.
+2. Use https://www.appstorescreenshot.com/
+
 # Generate 1284 x 2778 screenshot for App Store
 
 1. Use iPhone 11 Pro Max simulator to generate 1242 x 2688 raw screenshot.
