@@ -12,6 +12,18 @@
 
 ![](https://i.imgur.com/dS1l8Qu.png)
 
+Or, a better way is to login with Google account. Then, use the old template
+
+https://screenshots.pro/editor?template_id=67d0b0ae-c2b9-40a6-9e90-3ed8b7af614f
+
+
+    Position X : 56.41658961175087
+    Position Y : 359.3928890266867
+    Width : 1173.1307603212942
+    Height : 2416.440725382908
+
+![](https://i.imgur.com/9nKUXWE.png)
+
 # Find error in iOS string resource file
     plutil -lint Localizable.strings
 
