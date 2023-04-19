@@ -1,3 +1,18 @@
+# How to have a fullscreen Android app
+
+1. Apply `app:elevation="0dp"` in AppBarLayout.
+2. Apply `android:background="@android:color/transparent"` in AppBarLayout and Toolbar.
+3. Apply `<style name="Theme.MyApplication.AppBarOverlay" parent="ThemeOverlay.AppCompat.ActionBar" />` in AppBarLayout so that we are getting black title.
+4. Apply `<item name="android:windowLightStatusBar">true</item>` in Theme.MyApplication so that we are getting black status bar icon.
+5. Apply the following code in MainActivity's onCreate (Before super).
+
+---
+
+    Window w = getWindow();
+    w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
+
+
+
 # Generate 1242 x 2208 screenshot for App Store
 
 1. Use iPhone 8 Plus simulator to generate 1242 x 2208 raw screenshot.
