@@ -1,3 +1,25 @@
+# Rounded corner ripple effect
+
+    <?xml version="1.0" encoding="utf-8"?>
+    <ripple android:color="?android:colorControlHighlight"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <item android:id="@android:id/mask">
+            <shape android:shape="rectangle">
+                <corners android:topLeftRadius="16dp" android:topRightRadius="16dp"
+                    android:bottomLeftRadius="0dp" android:bottomRightRadius="0dp" />
+                <solid android:color="@android:color/white" />
+            </shape>
+        </item>
+
+        <item>
+            <shape android:shape="rectangle">
+                <corners android:topLeftRadius="16dp" android:topRightRadius="16dp"
+                    android:bottomLeftRadius="0dp" android:bottomRightRadius="0dp" />
+                <solid android:color="@color/white_90" />
+            </shape>
+        </item>
+    </ripple>
+
 # How to have a fullscreen Android app
 
 1. Apply `app:elevation="0dp"` in AppBarLayout.
