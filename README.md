@@ -60,6 +60,10 @@
 
 An additional dependency `jdk.crypto.ec` is required, due to runtime error when we are trying to perform news fetching - https://stackoverflow.com/questions/54770538/received-fatal-alert-handshake-failure-in-jlinked-jre/54785281#54785281
 
+# How to execute JStock
+
+    C:\Users\yccheok\Desktop\jstock>jre\bin\java.exe -Dsun.java2d.dpiaware=false -Xms64m  -Xmx512m --add-opens java.base/java.util=ALL-UNNAMED --add-opens java.base/java.lang.reflect=ALL-UNNAMED --add-opens java.base/java.text=ALL-UNNAMED --add-opens java.desktop/java.awt.font=ALL-UNNAMED --add-opens java.desktop/java.awt=ALL-UNNAMED -jar jstock.jar
+
 # Rounded corner ripple effect
 
     <?xml version="1.0" encoding="utf-8"?>
