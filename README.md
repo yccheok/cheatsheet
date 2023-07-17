@@ -2,6 +2,63 @@
 
     jlink --no-header-files --no-man-pages --compress=2 --strip-debug --module-path "C:\Program Files\Zulu\zulu-17\jmods" --add-modules java.base,java.datatransfer,java.desktop,java.logging,java.naming,java.prefs,java.rmi,java.security.sasl,java.sql,java.xml,javafx.base,javafx.controls,javafx.graphics,javafx.media,javafx.swing,javafx.web,jdk.jsobject,jdk.unsupported,jdk.crypto.ec --output jre
 
+# Find all dependencies
+
+    C:\Users\yccheok\Desktop\jstock>jdeps --ignore-missing-deps --list-deps jstock.jar lib\*.jar
+    Warning: split package: javax.xml jrt:/java.xml lib\stax-api-1.0.1.jar lib\xml-apis.jar
+    Warning: split package: javax.xml.datatype jrt:/java.xml lib\xml-apis.jar
+    Warning: split package: javax.xml.namespace jrt:/java.xml lib\stax-api-1.0.1.jar lib\xml-apis.jar
+    Warning: split package: javax.xml.parsers jrt:/java.xml lib\xml-apis.jar
+    Warning: split package: javax.xml.stream jrt:/java.xml lib\stax-api-1.0.1.jar
+    Warning: split package: javax.xml.stream.events jrt:/java.xml lib\stax-api-1.0.1.jar
+    Warning: split package: javax.xml.stream.util jrt:/java.xml lib\stax-api-1.0.1.jar
+    Warning: split package: javax.xml.transform jrt:/java.xml lib\xml-apis.jar
+    Warning: split package: javax.xml.transform.dom jrt:/java.xml lib\xml-apis.jar
+    Warning: split package: javax.xml.transform.sax jrt:/java.xml lib\xml-apis.jar
+    Warning: split package: javax.xml.transform.stream jrt:/java.xml lib\xml-apis.jar
+    Warning: split package: javax.xml.validation jrt:/java.xml lib\xml-apis.jar
+    Warning: split package: javax.xml.xpath jrt:/java.xml lib\xml-apis.jar
+    Warning: split package: org.w3c.dom jrt:/java.xml lib\xml-apis.jar lib\xom-1.1.jar
+    Warning: split package: org.w3c.dom.bootstrap jrt:/java.xml lib\xml-apis.jar
+    Warning: split package: org.w3c.dom.css jrt:/jdk.xml.dom lib\xml-apis.jar
+    Warning: split package: org.w3c.dom.events jrt:/java.xml lib\xml-apis.jar
+    Warning: split package: org.w3c.dom.html jrt:/jdk.xml.dom lib\xercesImpl.jar lib\xml-apis.jar
+    Warning: split package: org.w3c.dom.ls jrt:/java.xml lib\xml-apis.jar
+    Warning: split package: org.w3c.dom.ranges jrt:/java.xml lib\xml-apis.jar
+    Warning: split package: org.w3c.dom.stylesheets jrt:/jdk.xml.dom lib\xml-apis.jar
+    Warning: split package: org.w3c.dom.traversal jrt:/java.xml lib\xml-apis.jar
+    Warning: split package: org.w3c.dom.views jrt:/java.xml lib\xml-apis.jar
+    Warning: split package: org.w3c.dom.xpath jrt:/jdk.xml.dom lib\xml-apis.jar
+    Warning: split package: org.xml.sax jrt:/java.xml lib\xml-apis.jar
+    Warning: split package: org.xml.sax.ext jrt:/java.xml lib\xml-apis.jar
+    Warning: split package: org.xml.sax.helpers jrt:/java.xml lib\xml-apis.jar
+       java.base
+       java.datatransfer
+       java.desktop/sun.awt.geom
+       java.logging
+       java.naming
+       java.prefs
+       java.rmi
+       java.security.sasl
+       java.sql
+       java.xml/com.sun.org.apache.xerces.internal.parsers
+       java.xml/com.sun.org.apache.xerces.internal.util
+       java.xml/com.sun.org.apache.xerces.internal.xni.parser
+       javafx.base/com.sun.javafx.collections
+       javafx.base/com.sun.javafx.event
+       javafx.base/com.sun.javafx.runtime
+       javafx.controls/com.sun.javafx.scene.control
+       javafx.controls/com.sun.javafx.scene.control.behavior
+       javafx.graphics/com.sun.javafx.css
+       javafx.graphics/com.sun.javafx.scene.traversal
+       javafx.media
+       javafx.swing
+       javafx.web/com.sun.javafx.webkit
+       javafx.web/com.sun.webkit
+       jdk.jsobject
+       jdk.unsupported
+
+An additional dependency `jdk.crypto.ec` is required, due to runtime error when we are trying to perform news fetching - https://stackoverflow.com/questions/54770538/received-fatal-alert-handshake-failure-in-jlinked-jre/54785281#54785281
 
 # Rounded corner ripple effect
 
