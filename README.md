@@ -1,3 +1,8 @@
+# Create custom Java runtime image
+
+    jlink --no-header-files --no-man-pages --compress=2 --strip-debug --module-path "C:\Program Files\Zulu\zulu-17\jmods" --add-modules java.base,java.datatransfer,java.desktop,java.logging,java.naming,java.prefs,java.rmi,java.security.sasl,java.sql,java.xml,javafx.base,javafx.controls,javafx.graphics,javafx.media,javafx.swing,javafx.web,jdk.jsobject,jdk.unsupported,jdk.crypto.ec --output jre
+
+
 # Rounded corner ripple effect
 
     <?xml version="1.0" encoding="utf-8"?>
