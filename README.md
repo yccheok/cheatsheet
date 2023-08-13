@@ -108,7 +108,7 @@ An additional dependency `jdk.crypto.ec` is required, due to runtime error when 
 
 # Generate 1284 x 2778 screenshot for App Store
 
-1. Use iPhone 11 Pro Max simulator to generate 1242 x 2688 raw screenshot.
+1. Use iPhone 11 Pro Max simulator to generate 1242 x 2688 raw screenshot. (The reason we are using the iPhone 11 family is that at https://screenshots.pro, only the iPhone 11 has a minimalist design.)
 2. Use https://screenshots.pro/
 
 ![](https://i.imgur.com/xNRHXpO.png)
