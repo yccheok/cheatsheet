@@ -2,7 +2,7 @@
     // Generate APKs.
     bundletool build-apks --bundle=~/Desktop/com.yocto.wenote-536-5.36-release.aab --output=~/Desktop/output.apks --ks=~/yocto/my-release-key.jks --ks-key-alias=yocto
 
-    // Install APK to connected device. Connected device can be emulator.
+    // Install APK to connected device. Connected device can be an emulator.
     bundletool install-apks --apks=~/Desktop/output.apks
     
 # Create custom Java runtime image
