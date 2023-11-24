@@ -1,3 +1,11 @@
+# How to capture images for the onboarding screen in iOS?
+
+1. Use an iPhone SE (3rd generation) with iOS 16.2.
+2. Set the font size to Large.
+3. Capture a screenshot in the simulator with the size of 750x1334 pixels.
+4. Use Gimp to edit the screenshot down to a region with the size of 750x1024 pixels.
+
+
 # Replicate a bug seen when installing an app via App Bundle from the Google Play store?
     // Generate APKs.
     bundletool build-apks --bundle=~/Desktop/com.yocto.wenote-536-5.36-release.aab --output=~/Desktop/output.apks --ks=~/yocto/my-release-key.jks --ks-key-alias=yocto
