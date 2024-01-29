@@ -352,7 +352,13 @@ List all tables
 Check whether news notifications are being sent today
 
     select ts from notification where (request->'data'->'news_alerts') is not null order by ts desc limit 100;
-    
+
+Check user subscription
+
+    select * from google_subscription where (subscription_info->>'orderId') = 'GPA.3383-0878-7727-50427'; (expired)
+
+    select * from google_subscription where (subscription_info->>'orderId') = 'GPA.3359-8897-6679-16612'; (active)
+
 Check table size usage
 
     select table_name, pg_relation_size(quote_ident(table_name))
