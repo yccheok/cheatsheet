@@ -18,8 +18,16 @@
         WORKDIR /app
     
     3) docker-compose exec postgres bash
+
+    4) psql -h localhost -U postgres
+
+    5) drop DATABASE wenote_cloud_storage;
     
-    4) psql -U postgres wenote_cloud_storage < pg_dump-20240129_000002.sql
+    6) create DATABASE wenote_cloud_storage;
+
+    7) exit
+    
+    8) psql -U postgres wenote_cloud_storage < pg_dump-20240129_000002.sql
 
 
 # How to capture images for the onboarding screen in iOS?
