@@ -1,3 +1,29 @@
+# How to restore SQL dump file from production?
+
+    1) Place pg_dump-20240129_000002.sql in postgres folder.
+    
+    2) Change
+    
+    postgres/Dockerfile to
+    
+        FROM postgres:13.3
+    
+        RUN mkdir /postgres_logs
+        RUN chown postgres:postgres /postgres_logs
+    
+        ENV POSTGRES_DB wenote_cloud_storage
+    
+        ADD postgres.sql /docker-entrypoint-initdb.d/
+    
+    
+        COPY . /app
+        WORKDIR /app
+    
+    3) docker-compose exec postgres bash
+    
+    4) psql -U postgres wenote_cloud_storage < pg_dump-20240129_000002.sql
+
+
 # How to capture images for the onboarding screen in iOS?
 
 1. Use an iPhone SE (3rd generation) with iOS 16.2.
