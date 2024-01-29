@@ -2,9 +2,7 @@
 
     1) Place pg_dump-20240129_000002.sql in postgres folder.
     
-    2) Change
-    
-    postgres/Dockerfile to
+    2) Change postgres/Dockerfile to
     
         FROM postgres:13.3
     
