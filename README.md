@@ -352,7 +352,12 @@ Let Flask access local drive
     flask/Dockerfile
     
         CMD /usr/local/bin/gunicorn --workers=5 main:app -b 0.0.0.0:5000 --error-logfile=/var/log/gunicorn3.err.log --reload   
-            
+
+Get Python logging in Flask
+    
+    Use the following code to perform printing in Flask: print("This is message", flush=True)
+    docker-compose logs -f
+    
 # Postgres
 
 Went into db container
