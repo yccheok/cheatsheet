@@ -332,32 +332,26 @@ Remove postgres volume
     
 Let Flask access local drive
 
-    flask:
-        #
-        # FOR DEVELOPMENT (Not using internal network for volume mapping to work)
-        #
-        #networks:
-        #    - internal
-        #
-        build:
-            context: ./flask
-            dockerfile: Dockerfile
-        restart: always
-        depends_on:
-            - pgbouncer
-        expose:
-            - "5000"
-
+    docker-compose.xml
+    
+      nginx:
+        ...
+        ports:
+          - "80:80"
+        ...
+    
+      flask:
+        ...
         #
         # FOR DEVELOPMENT
         #
         volumes:
-            - C:/xxx/flask:/app
-        logging:
-            driver: "json-file"
-            options:
-            max-file: "10"
-            max-size: "10m"
+            - ./flask/:/app
+        ...
+    
+    flask/Dockerfile
+    
+        CMD /usr/local/bin/gunicorn --workers=5 main:app -b 0.0.0.0:5000 --error-logfile=/var/log/gunicorn3.err.log --reload   
             
 # Postgres
 
