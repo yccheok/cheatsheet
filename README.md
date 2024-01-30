@@ -1,3 +1,6 @@
+# Command to keep the container running (For easy debugging)
+    CMD ["tail", "-f", "/dev/null"]
+
 # How to restore SQL dump file from production?
 
     1) Place pg_dump-20240129_000002.sql in postgres folder.
