@@ -1,3 +1,13 @@
+# Update WeNote Cloud user paid status
+
+    select * from customer where id = 1;
+    select * from customer_google_subscription where fk_customer_id = 1;
+    select payment_state from google_subscription where id = 1;
+    select * from paid_customer where id = 1;
+
+    # DANGEROUS COMMAND!
+    UPDATE google_subscription SET payment_state = 1 WHERE id = 1;
+
 # Command to keep the container running (For easy debugging)
     CMD ["tail", "-f", "/dev/null"]
 
