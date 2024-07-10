@@ -194,6 +194,8 @@ https://screenshots.pro/editor?template_id=67d0b0ae-c2b9-40a6-9e90-3ed8b7af614f
 
     https://apps.apple.com/app/id1562256136?action=write-review
 
+    https://apps.apple.com/tw/app/id1562256136?l=zh_tw
+
 # Using data from production iCloud
 
 https://stackoverflow.com/a/40414108/72437
