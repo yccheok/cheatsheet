@@ -1,3 +1,16 @@
+# Python
+  # Create virtual env
+  python3 -m venv env
+
+  # Activate virtual env
+  source env/bin/activate
+
+  # Install all packages
+  pip install -r requirements.txt
+
+  # List down all installed packages
+  pip list
+  
 # Update WeNote Cloud user paid status
 
     select * from customer where id = 1;
