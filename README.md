@@ -1,15 +1,16 @@
 # Python
-  //# Create virtual env
-  python3 -m venv env
 
-  //# Activate virtual env
-  source env/bin/activate
+    # Create virtual env
+    python3 -m venv env
 
-  //# Install all packages
-  pip install -r requirements.txt
+    # Activate virtual env
+    source env/bin/activate
 
-  //# List down all installed packages
-  pip list
+    # Install all packages
+    pip install -r requirements.txt
+
+    # List down all installed packages
+    pip list
   
 # Update WeNote Cloud user paid status
 
