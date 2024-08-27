@@ -1,3 +1,8 @@
+# Firebase
+    firebase init
+    firebase emulators:start
+    firebase deploy
+    
 # Python
 
     # Create virtual env
