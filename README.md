@@ -1,4 +1,5 @@
 # Kill Firebase emulator port occupy
+    kill -9 $(lsof -t -i :8085)
     lsof -i :8085
     kill -9 <PID>
     
