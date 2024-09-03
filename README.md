@@ -1,3 +1,7 @@
+# Kill Firebase emulator port occupy
+    lsof -i :8085
+    kill -9 <PID>
+    
 # Firebase
     firebase init
     firebase emulators:start
