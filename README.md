@@ -5,7 +5,10 @@
     
 # Firebase
     firebase init
+    
     firebase emulators:start
+    kill -9 $(lsof -t -i :8085); firebase emulators:start
+    
     firebase deploy
     
 # Python
