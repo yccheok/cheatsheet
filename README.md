@@ -401,7 +401,7 @@ Get Python logging in Flask
 
 Went into db container
     
-    docker-compose exec postgres sh
+    docker-compose exec postgres bash
    
 Login to localhost as user "postgres"
 
