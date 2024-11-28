@@ -2,6 +2,10 @@
     kill -9 $(lsof -t -i :8085)
     lsof -i :8085
     kill -9 <PID>
+
+# Firestore
+    # Update index file
+    firebase firestore:indexes
     
 # Firebase
     firebase init
