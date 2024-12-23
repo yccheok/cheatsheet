@@ -1,3 +1,25 @@
+# A Beginner's Guide to Testing In-App Purchases in the Sandbox Environment
+1. Using a real device is **mandatory**.
+2. Log out of the current account on the real device.
+3. Log in to the real device using a sandbox account.
+4. Sandbox accounts can be found at: https://appstoreconnect.apple.com/access/users/sandbox.
+5. To clear the purchase history, select the sandbox account at https://appstoreconnect.apple.com/access/users/sandbox and click the "Clear Purchase History" button.
+6. To simulate a refund scenario, use the following code snippet:
+
+---
+    // Initialize the transaction variable in the listenForTransactions and purchase functions within the Store class.
+    var transction: Transaction?
+    
+    func refund() async {
+        if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
+            do {
+                let status = try await transction?.beginRefundRequest(in: windowScene)
+            } catch {
+                print("Failed to begin refund request: \(error)")
+            }
+        }
+    }
+
 # Short URL
 
     Melonote - https://apple.co/3Vs4br9
