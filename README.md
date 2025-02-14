@@ -1,3 +1,10 @@
+# Dockerfile
+
+    # Build
+    docker build -t worker-faster_whisper .
+    # Run
+    docker run -it worker-faster_whisper bash
+    
 # A Beginner's Guide to Testing In-App Purchases in the Sandbox Environment
 1. Using a real device is **mandatory**.
 2. Log out of the current account on the real device.
