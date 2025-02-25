@@ -1,3 +1,8 @@
+# How to remove a cloud storage account safety
+1. select * from customer where email = 'xxx';
+2. UPDATE customer SET enabled = false WHERE id = 1;
+
+
 # Cloud Storage Server Maintenance
 
 1. Use `htop` to check available memory. (Current free memory: 500 MB)
