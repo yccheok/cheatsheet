@@ -2,10 +2,8 @@
 
 1. Use `htop` to check available memory. (Current free memory: 500 MB)
 2. Use `df -h --output=avail /` to check available disk space. (Currently: 34 GB free)
-3. Do not use `docker-compose restart`, as it will cause downtime. Instead, use:
-    docker-compose up -d --force-recreate --build
-4. Run the same command for Traefik:
-    docker-compose up -d --force-recreate --build
+3. Do not use `docker-compose restart`, as it will cause downtime. Instead, use: `docker-compose up -d --force-recreate --build`
+4. Run the same command for Traefik: `docker-compose up -d --force-recreate --build`
 5. Verify the service is running at: https://.../info
 
 
