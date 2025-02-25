@@ -107,7 +107,9 @@
 
     4) psql -h localhost -U postgres
 
-    5) drop DATABASE wenote_cloud_storage;
+    ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️
+    5) ⚠️⚠️⚠️ drop DATABASE wenote_cloud_storage; ⚠️⚠️⚠️
+    ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️
     
     6) create DATABASE wenote_cloud_storage;
 
