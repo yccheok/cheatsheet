@@ -30,7 +30,8 @@
 3. Log in to the real device using a sandbox account.
 4. Sandbox accounts can be found at: https://appstoreconnect.apple.com/access/users/sandbox.
 5. To clear the purchase history, select the sandbox account at https://appstoreconnect.apple.com/access/users/sandbox and click the "Clear Purchase History" button.
-6. To simulate a refund scenario, use the following code snippet:
+6. In real device, go to Settings/ App Store/ Sanbox Account to simulate subscription cancellation.
+7. To simulate a refund scenario, use the following code snippet:
 
 ---
     // Initialize the transaction variable in the listenForTransactions and purchase functions within the Store class.
