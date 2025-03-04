@@ -1,3 +1,7 @@
+# Check available disk space
+
+    df --output=avail -h /
+
 # App Store URL
 1. https://apps.apple.com/app/id1562256136 - WeNote
    
