@@ -1,3 +1,6 @@
+# How to perform SQL dump from Docker
+    docker exec -t wenoteaffiliate_postgres_1 pg_dump -U postgres wenote_affiliate > wenote_cloud_storage_dump.sql
+    
 # Check available disk space
 
     df --output=avail -h /
