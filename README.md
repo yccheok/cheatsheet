@@ -13,6 +13,10 @@
         scp /root/wenote-affiliate/wenote_affiliate_dump.sql root@88.99.187.170:/root/
     
     Destination server:
+        docker-compose stop
+    
+        docker-compose start postgres
+        
         docker exec -i wenote-affiliate-postgres-1 psql -U postgres -c "DROP DATABASE IF EXISTS wenote_affiliate;"
 
         docker exec -i wenote-affiliate-postgres-1 psql -U postgres -c "CREATE DATABASE wenote_affiliate;"
