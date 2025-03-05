@@ -10,7 +10,7 @@
     
         docker exec -t wenoteaffiliate_postgres_1 pg_dump -U postgres wenote_affiliate > wenote_affiliate_dump.sql
     
-        scp /root/wenote-affiliate/wenote_affiliate_dump.sql root@88.99.187.170:/root/
+        scp /root/wenote-affiliate/wenote_affiliate_dump.sql root@??.??.???.???:/root/
     
     Destination server:
         docker-compose stop
