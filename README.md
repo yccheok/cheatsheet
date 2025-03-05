@@ -1,5 +1,19 @@
 # How to perform SQL dump from Docker
-    docker exec -t wenoteaffiliate_postgres_1 pg_dump -U postgres wenote_affiliate > wenote_cloud_storage_dump.sql
+
+    Destination server:
+        vi ~/.ssh/authorized_keys (Paste public key of source server)
+    
+    Source server:
+        docker-compose stop
+    
+        docker-compose start postgres
+    
+        docker exec -t wenoteaffiliate_postgres_1 pg_dump -U postgres wenote_affiliate > wenote_affiliate_dump.sql
+    
+        scp /root/wenote-affiliate/wenote_affiliate_dump.sql root@88.99.187.170:/root/
+    
+    Destination server:
+        cat /root/wenote_affiliate_dump.sql | docker exec -i wenoteaffiliate_postgres_1 psql -U postgres -d wenote_affiliate
     
 # Check available disk space
 
