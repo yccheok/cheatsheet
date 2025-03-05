@@ -13,7 +13,11 @@
         scp /root/wenote-affiliate/wenote_affiliate_dump.sql root@88.99.187.170:/root/
     
     Destination server:
-        cat /root/wenote_affiliate_dump.sql | docker exec -i wenoteaffiliate_postgres_1 psql -U postgres -d wenote_affiliate
+        docker exec -i wenote-affiliate-postgres-1 psql -U postgres -c "DROP DATABASE IF EXISTS wenote_affiliate;"
+
+        docker exec -i wenote-affiliate-postgres-1 psql -U postgres -c "CREATE DATABASE wenote_affiliate;"
+
+        cat /root/wenote_affiliate_dump.sql | docker exec -i wenote-affiliate-postgres_1 psql -U postgres -d wenote_affiliate
     
 # Check available disk space
 
