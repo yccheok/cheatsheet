@@ -4,24 +4,24 @@
         vi ~/.ssh/authorized_keys (Paste public key of source server)
     
     Source server:
-        docker compose stop
-    
-        docker compose start postgres
-    
-        docker exec -t wenoteaffiliate_postgres_1 pg_dump -U postgres wenote_affiliate > wenote_affiliate_dump.sql
-    
-        scp /root/wenote-affiliate/wenote_affiliate_dump.sql root@??.??.???.???:/root/
+        docker-compose stop
+        
+        docker-compose start postgres
+        
+        docker exec -t wenote-cloud-notification_postgres_1 pg_dump -U postgres wenote_cloud_notification > wenote_cloud_notification_dump.sql
+        
+        scp /root/wenote-cloud-notification/wenote_cloud_notification_dump.sql root@???.???.???.???:/root/
     
     Destination server:
         docker compose stop
-    
-        docker compose start postgres
         
-        docker exec -i wenote-affiliate-postgres-1 psql -U postgres -c "DROP DATABASE IF EXISTS wenote_affiliate;"
-
-        docker exec -i wenote-affiliate-postgres-1 psql -U postgres -c "CREATE DATABASE wenote_affiliate;"
-
-        cat /root/wenote_affiliate_dump.sql | docker exec -i wenote-affiliate-postgres-1 psql -U postgres -d wenote_affiliate
+        docker compose start postgres
+            
+        docker exec -i wenote-cloud-notification-postgres-1 psql -U postgres -c "DROP DATABASE IF EXISTS wenote_cloud_notification;"
+        
+        docker exec -i wenote-cloud-notification-postgres-1 psql -U postgres -c "CREATE DATABASE wenote_cloud_notification;"
+        
+        cat /root/wenote_cloud_notification_dump.sql | docker exec -i wenote-cloud-notification-postgres-1 psql -U postgres -d wenote_cloud_notification
     
 # Check available disk space
 
