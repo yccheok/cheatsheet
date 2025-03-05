@@ -1,3 +1,6 @@
+# Crete external network
+    docker network create proxy
+
 # Generate SSH key
     ssh-keygen -t ed25519 -C "???@gmail.com"
 
