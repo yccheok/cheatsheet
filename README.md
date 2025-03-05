@@ -4,18 +4,18 @@
         vi ~/.ssh/authorized_keys (Paste public key of source server)
     
     Source server:
-        docker-compose stop
+        docker compose stop
     
-        docker-compose start postgres
+        docker compose start postgres
     
         docker exec -t wenoteaffiliate_postgres_1 pg_dump -U postgres wenote_affiliate > wenote_affiliate_dump.sql
     
         scp /root/wenote-affiliate/wenote_affiliate_dump.sql root@??.??.???.???:/root/
     
     Destination server:
-        docker-compose stop
+        docker compose stop
     
-        docker-compose start postgres
+        docker compose start postgres
         
         docker exec -i wenote-affiliate-postgres-1 psql -U postgres -c "DROP DATABASE IF EXISTS wenote_affiliate;"
 
