@@ -17,7 +17,7 @@
 
         docker exec -i wenote-affiliate-postgres-1 psql -U postgres -c "CREATE DATABASE wenote_affiliate;"
 
-        cat /root/wenote_affiliate_dump.sql | docker exec -i wenote-affiliate-postgres_1 psql -U postgres -d wenote_affiliate
+        cat /root/wenote_affiliate_dump.sql | docker exec -i wenote-affiliate-postgres-1 psql -U postgres -d wenote_affiliate
     
 # Check available disk space
 
