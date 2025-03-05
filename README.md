@@ -1,3 +1,6 @@
+# Generate SSH key
+    ssh-keygen -t ed25519 -C "???@gmail.com"
+
 # How to perform SQL dump from Docker
 
     Destination server:
