@@ -1,3 +1,12 @@
+# Meta Ads Video Guideline
+
+- Square 1080x1080
+    - Ignore the safe area. Maximize space for the biggest impact.
+
+- Vertical 1080x1920
+    - Follow guideline https://www.facebook.com/business/help/980593475366490?id=1240182842783684
+    - Used in Facebook reel and Instagram reel.
+
 # Crete external network
     docker network create proxy
 
