@@ -1,3 +1,10 @@
+# Migrate from Bitbucket to GitHub
+
+    git clone --mirror git@bitbucket.org:yocto-enterprise/melonote.git
+    cd melonote.git
+    git remote set-url origin git@github.com:yccheok/melonote-private.git
+    git push --mirror
+
 # Meta Ads Video Guideline
 
 - Square 1080x1080
