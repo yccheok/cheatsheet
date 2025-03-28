@@ -5,6 +5,14 @@
     git remote set-url origin git@github.com:yccheok/melonote-private.git
     git push --mirror
 
+    # Large file handling.
+    git clone --mirror git@bitbucket.org:yocto-enterprise/melonote-youtube.git
+    cd melonote-youtube.git
+    git remote set-url origin git@github.com:yccheok/melonote-youtube.git
+    git lfs migrate import --everything --include="*.bin"
+    git lfs migrate info
+    git push --mirror
+
 # Meta Ads Video Guideline
 
 - Square 1080x1080
