@@ -1,3 +1,9 @@
+# Checkout Git LFS files
+    sudo apt-get update
+    sudo apt-get install git-lfs -y
+    git lfs install
+    git lfs pull
+    
 # Migrate from Bitbucket to GitHub
 
     git clone --mirror git@bitbucket.org:yocto-enterprise/melonote.git
