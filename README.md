@@ -1,3 +1,8 @@
+# Manually upload your dSYM files
+    https://firebase.google.com/docs/crashlytics/get-deobfuscated-reports?platform=ios
+    
+    /Users/yccheok/Library/Developer/Xcode/DerivedData/melonote-apaywdvgwzkfxwdjinyljvyrutws/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/upload-symbols -gsp /Users/yccheok/yocto/melonote-private/ios/melonote/GoogleService-Info.plist -p ios /Users/yccheok/Library/Developer/Xcode/DerivedData/melonote-apaywdvgwzkfxwdjinyljvyrutws/Build/Products/Debug-iphoneos/melonote.app.dSYM
+    
 # Checkout Git LFS files
     sudo apt-get update
     sudo apt-get install git-lfs -y
