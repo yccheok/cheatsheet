@@ -489,7 +489,7 @@ Clean build on ONE images in case something went wrong
     
 Clean build on ALL images in case something went wrong
 
-    docker-compose up -d --force-recreate --build
+    docker compose down; docker compose up -d --force-recreate --build
     
 Clear redis cache
 
