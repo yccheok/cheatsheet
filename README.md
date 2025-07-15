@@ -131,6 +131,10 @@
     firebase firestore:indexes
     
 # Firebase
+    python3 -m venv venv
+    source venv/bin/activate
+    cd functions
+    python3 -m pip install -r requirements.txt
     firebase init
     
     firebase emulators:start
