@@ -1,7 +1,7 @@
 # How to run Melonote sandbox code in sandbox directory
     python3 -m venv env
     source env/bin/activate
-    pip install -r requirements.txt
+    pip install -r ../requirements.txt
     pip install --no-binary=opencc opencc==1.1.9
     pip install assemblyai deepgram-sdk==3.* google-cloud-speech
 
