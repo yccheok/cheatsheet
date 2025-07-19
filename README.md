@@ -2,8 +2,7 @@
     python3 -m venv env
     source env/bin/activate
     pip install -r ../requirements.txt
-    pip install --no-binary=opencc opencc==1.1.9
-    pip install assemblyai 'deepgram-sdk==3.*' google-cloud-speech
+    pip install -r requirements.txt
 
 # Manually upload your dSYM files
     https://firebase.google.com/docs/crashlytics/get-deobfuscated-reports?platform=ios
