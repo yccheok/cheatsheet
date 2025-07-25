@@ -1,3 +1,8 @@
+# Ensure my current branch is latest.
+    git fetch origin
+    git checkout before-json-integration
+    git reset --hard origin/before-json-integration
+  
 # How to run Melonote sandbox code in sandbox directory
     python3 -m venv env
     source env/bin/activate
