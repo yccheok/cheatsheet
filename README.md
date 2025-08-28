@@ -1,6 +1,6 @@
 # Manage disk usage of /download folder (TODO: Perhaps we should develop a cron job)
     sudo du -sh /var/lib/docker/volumes/*/_data | sort -hr
-    cd /melonote-youtube
+    cd ~/melonote-youtube
     docker compose exec melon bash
     
     # Find directories which are more than 7 days old
