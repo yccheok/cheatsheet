@@ -1,3 +1,32 @@
+# How to display a fake busy note cell
+
+    private func getSnapshot(noteWrappers : [NoteWrapper]) -> Snapshot {
+        var snapshot = Snapshot()
+
+        // A section will be appended even if there are no notes, ensuring the folder header remains
+        // visible.
+        snapshot.appendSections([.note])
+        
+        if true {
+            let n = NoteWrapper(
+                id: "xxx",
+                syncedTimestamp: 123,
+                note: nil,
+                failedCount: nil
+            )
+            
+            let nw = [n]
+        
+            snapshot.appendItems(nw, toSection: .note)
+            
+            return snapshot
+        }
+        
+        snapshot.appendItems(noteWrappers, toSection: .note)
+        
+        return snapshot
+    }
+    
 # Manage disk usage of /download folder (TODO: Perhaps we should develop a cron job)
     sudo du -sh /var/lib/docker/volumes/*/_data | sort -hr
     cd ~/melonote-youtube
