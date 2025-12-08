@@ -1,3 +1,34 @@
+# How to perform auto scrolling
+- For unknown reason, we must NOT use webview version of markdown.
+
+```
+override func viewDidAppear(_ animated: Bool) {
+    super.viewDidAppear(animated)
+    
+    // Ensure we start at top
+    scrollView.setContentOffset(.zero, animated: false)
+    
+    // Pause for 3 second
+    DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
+        self.startAutoScroll()
+    }
+}
+
+func startAutoScroll() {
+    // Calculate final offset (bottom)
+    let bottomOffset = CGPoint(
+        x: 0,
+        y: scrollView.contentSize.height - scrollView.bounds.height
+    )
+    guard bottomOffset.y > 0 else { return } // no scrolling needed
+    
+    // Smooth animation over 20 seconds
+    UIViewPropertyAnimator(duration: 20.0, curve: .linear) {
+        self.scrollView.setContentOffset(bottomOffset, animated: false)
+    }.startAnimation()
+}
+```
+
 # How to display a fake busy note cell
 
     private func getSnapshot(noteWrappers : [NoteWrapper]) -> Snapshot {
