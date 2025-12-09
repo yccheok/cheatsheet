@@ -1,3 +1,20 @@
+# Sample websites to generate demo for screenshots.
+```
+https://www.cnnindonesia.com/gaya-hidup/20221003110442-262-855611/10-makanan-indonesia-yang-diakui-sebagai-makanan-terenak-di-dunia/2
+
+https://www.nhs.uk/live-well/eat-well/how-to-eat-a-balanced-diet/eight-tips-for-healthy-eating/
+
+https://www.nhs.uk/every-mind-matters/mental-wellbeing-tips/how-to-fall-asleep-faster-and-sleep-better/
+
+https://www.youtube.com/watch?v=TxtW0_gx_B0&t=293s
+
+https://www.youtube.com/watch?v=NpXkhwFiaF8&t=4432s
+
+https://www.youtube.com/watch?v=lBVtvOpU80Q&t=1463s
+
+https://media.jreast.co.jp/articles/5042
+```
+
 # How to perform auto scrolling
 - For unknown reason, we must NOT use webview version of markdown.
 
