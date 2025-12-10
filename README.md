@@ -14,9 +14,11 @@ https://www.youtube.com/watch?v=lBVtvOpU80Q&t=1463s
 
 https://media.jreast.co.jp/articles/5042
 
-https://glints.com/id/lowongan/tips-produktif-saat-mulai-kerja-di-kantor-baru/
+https://glints.com/id/lowongan/tips-produktif-saat-mulai-kerja-di-kantor-baru/ (chat)
 
-https://www.healthline.com/nutrition/27-health-and-nutrition-tips#avoid-up-fs
+https://www.healthline.com/nutrition/27-health-and-nutrition-tips#avoid-up-fs (quiz, flashcard)
+
+https://www.niagarainstitute.com/blog/productivity-tips (mind map)
 ```
 
 # How to perform auto scrolling
