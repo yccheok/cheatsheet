@@ -1,3 +1,7 @@
+# How to SCP
+
+scp -r secrets/ root@0.0.0.0:/root/x/secrets/
+
 # Sample websites to generate demo for screenshots.
 ```
 https://www.cnnindonesia.com/gaya-hidup/20221003110442-262-855611/10-makanan-indonesia-yang-diakui-sebagai-makanan-terenak-di-dunia/2
