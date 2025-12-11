@@ -1,6 +1,8 @@
 # How to SCP
 
-scp -r secrets/ root@0.0.0.0:/root/x/secrets/
+```
+scp -r secrets/ root@0.0.0.0:/root/x/
+```
 
 # Sample websites to generate demo for screenshots.
 ```
