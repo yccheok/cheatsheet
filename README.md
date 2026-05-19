@@ -1,3 +1,9 @@
+# Safed way to copy file to secondary bucket (Without any file deletion in source and destination)
+
+```
+gcloud storage rsync gs://calorie-d638c.firebasestorage.app/ gs://calorie-secondary --recursive
+```
+
 # How to SCP
 
 ```
