@@ -2,6 +2,8 @@
 
 ```
 gcloud storage rsync gs://calorie-d638c.firebasestorage.app/ gs://calorie-secondary --recursive
+
+gcloud storage rsync gs://calorie-d638c.firebasestorage.app/zm3cWWSi8mYSkT0VnhEuQR8dWxn1/ gs://calorie-secondary/zm3cWWSi8mYSkT0VnhEuQR8dWxn1/ --recursive
 ```
 
 # How to SCP
