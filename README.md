@@ -1,3 +1,11 @@
+# If an error occurs while making a request in the Firebase environment, please perform the following steps.
+
+```
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+export no_proxy=*
+kill -9 $(lsof -t -i :8085); firebase emulators:start
+```
+
 # Safed way to copy file to secondary bucket (Without any file deletion in source and destination)
 
 ```
