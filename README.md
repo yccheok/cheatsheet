@@ -201,8 +201,9 @@ func startAutoScroll() {
 2. https://apps.apple.com/app/id6670156126 - Melonote
    
 # How to remove a cloud storage account safety
-1. select * from customer where email = 'xxx';
-2. UPDATE customer SET enabled = false WHERE id = 1;
+
+    1. select * from customer where email = 'xxx';
+    2. UPDATE customer SET enabled = false WHERE id = 1;
 
 
 # Cloud Storage Server Maintenance
